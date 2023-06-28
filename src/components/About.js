@@ -33,9 +33,8 @@ const About = () => {
            className='flex-1'>
             <h2 className='h2 text-accent'>Sobre mim.</h2>
             <h3 className='h3 mb-4'>Eu sou um Desenvolvedor Front-End com 2 anos de experiencia.</h3>
-            <p className='mb-6 '>Com minha experiência prévia como Programador, adquiri habilidades de infra e desenvolvimento de aplicativos da web usando JavaScript. 
-              Tenho expertise em comunicação, o que me permite trabalhar de maneira eficiente em equipe. Meu projeto mais relevante como Desenvolvedor Front-End 
-              já conta com 3 mil usuários ativos e tem como missão encontrar carros roubados. Conectar e ajudar pessoas.</p>
+            <p className='mb-6 '>Com minha experiência prévia como programador, adquiri habilidades em infraestrutura e desenvolvimento de aplicativos web usando JavaScript. Sou uma pessoa extrovertida que aprecia viajar e capturar momentos de paisagens magníficas através de fotografias. 
+            Tenho um autêntico gosto por me envolver em projetos e executá-los com excelência, garantindo que cada trabalho seja feito de forma impecável..</p>
 
             <div className='flex gap-x-6 lg:gap-x-10 mb-12 '>
               <div>
