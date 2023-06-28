@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 
-
 const Banner = () => {
   return (
     <section
@@ -33,7 +32,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text-[60px] font-secondary 
               font-semibold uppercase leading-[1]"
-              >
+            >
               <span className=" text-white mr-4">Eu sou um</span>
               <TypeAnimation
                 sequence={[
@@ -50,33 +49,52 @@ const Banner = () => {
                 repeat={Infinity}
               />
             </motion.div>
-            <p className=" mb-8 max-w-lg mx-auto lg:mx-0">
-              Programador autodidata, futuro Engenheiro de Software, venho
-              desenvolvendo projetos como Desenvolvedor Front-end e estou me
-              especializando nesta área, com foco em tecnologias como
+            <motion.p
+              className=" mb-8 max-w-lg mx-auto lg:mx-0"
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+            >
+              Programador autodidata, futuro Engenheiro de Software. <br></br>
+              Venho desenvolvendo projetos como Desenvolvedor Front-end e estou
+              me especializando nesta área, com foco em tecnologias como
               JavaScript, ReactJS, NextJs, TypeScript e NodeJS nas horas vagas.
-            </p>
-            <div
+            </motion.p>
+            <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12
             mx-auto lg:mx-0 "
             >
-              <button className="btn btn-lg"><Link to="contact" activeClass="active" smooth={true} spy={true}>Contato</Link></button>
+              <button className="btn btn-lg">
+                <Link
+                  to="contact"
+                  activeClass="active"
+                  smooth={true}
+                  spy={true}
+                >
+                  Contato
+                </Link>
+              </button>
               <a href="#" className="text-gradient btn-link">
                 Meu Portifolio
               </a>
-            </div>
+            </motion.div>
             <div
               className="flex text-[2] gap-x-6 max-w-max mx-auto
                 lg:mx-0"
             >
-              <a href="#">
-                <Link to="https://github.com/thiagoxporfirio"><FaGithub /></Link>
+              <a href="https://github.com/thiagoxporfirio">
+                <FaGithub />
               </a>
               <a href="#">
-                <Link to=""><FaYoutube /></Link>
+                <FaYoutube />
               </a>
-              <a href="#">
-                <Link href="https://www.linkedin.com/in/thiagoxporfirio/"><FaLinkedin /></Link>
+              <a href="https://www.linkedin.com/in/thiagoxporfirio/">
+                <FaLinkedin />
               </a>
             </div>
           </div>
