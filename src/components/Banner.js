@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "../assets/avatar.svg";
+import Euimage from "../assets/euremovebg.png"
 import { FaGithub, FaYoutube, FaDribbble, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -83,7 +84,11 @@ const Banner = () => {
                 Meu Portifolio
               </a>
             </motion.div>
-            <div
+            <motion.div
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
               className="flex text-[2] gap-x-6 max-w-max mx-auto
                 lg:mx-0"
             >
@@ -96,12 +101,16 @@ const Banner = () => {
               <a href="https://www.linkedin.com/in/thiagoxporfirio/">
                 <FaLinkedin />
               </a>
-            </div>
+            </motion.div>
           </div>
           {/* image */}
-          <div className="hidden lg:flex felx-1 max-w-[320px] lg:max-w-[482px] ">
-            <img alt="" />
-          </div>
+          <motion.div
+            variants={fadeIn("down", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+           className="hidden lg:flex felx-1 max-w-[320px] lg:max-w-[482px] ">
+            <img className="" src={Euimage} alt="" />
+          </motion.div>
         </div>
       </div>
     </section>
