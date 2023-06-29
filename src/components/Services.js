@@ -16,7 +16,7 @@ const services = [
   },
   {
     name: "Streamer",
-    description: "Jogando a noite transmitindo jogos em que eu curto no tempo livre.",
+    description: "Jogando a noite transmitindo jogos em que eu curto e jogo no tempo livre.",
     link: "Saiba mais"
   }
 ]
