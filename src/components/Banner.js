@@ -109,7 +109,7 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
            className="hidden lg:flex felx-1 max-w-[320px] lg:max-w-[482px] ">
-            <img className="" src={Euimage} alt="" />
+            <img className="" alt="" />
           </motion.div>
         </div>
       </div>
