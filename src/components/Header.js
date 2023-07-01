@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <a href="#">
-            <img src={Logo} alt="" />
+            {/*<img src={Logo} alt="" /> */}
           </a>
           <button className="btn btn-sm">
             <Link to="contact" activeClass="active" smooth={true} spy={true}>
