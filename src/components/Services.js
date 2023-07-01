@@ -35,7 +35,7 @@ const Services = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-          className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
+            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
             <h2 className="h2 text-accent mb-6">Oque eu faço?</h2>
             <h3 className="h3 max-w-[455pc] mb-16">
               Eu sou um Desenvolvedor Front-End com 2 anos de experiencia.
@@ -43,12 +43,12 @@ const Services = () => {
             <button className="btn btn-sm ">Veja meu trabalho</button>
           </motion.div>
           {/*Services */}
-          <motion.div 
+          <motion.div
             variants={fadeIn('left', 0.5)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-          className="flex-1 ">
+            className="flex-1 ">
             {/*Services e list */}
             <div>
               {services.map((service, index) => {
@@ -68,7 +68,7 @@ const Services = () => {
                     </div>
                     <div className="flex flex-col flex-1 items-end">
                       <a
-                        href=""
+                        href="https://github.com/thiagoxporfirio"
                         className="btn w-9 h-9 mb[42px] flex justify-center items-center "
                       >
                         <BsArrowUpRight />
