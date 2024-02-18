@@ -11,9 +11,9 @@ const services = [
     link: "Saiba mais",
   },
   {
-    name: "UI/UX Design",
+    name: "Desenvolvedor Back-End",
     description:
-      "Depois de cursos e preparamentos com muita pratica em UI/UX Designer estou pronto para construir os melhores padroes de layouts responsivos.",
+      "Depois de cursos e preparamentos com muita pratica em Dev back-end, estou pronto para ajudar a criar soluções eficazes e de alto impacto no universo do desenvolvimento de software.",
     link: "Saiba mais",
   },
   {
@@ -38,7 +38,7 @@ const Services = () => {
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
             <h2 className="h2 text-accent mb-6">Oque eu faço?</h2>
             <h3 className="h3 max-w-[455pc] mb-16">
-              Eu sou um Desenvolvedor Front-End com 2 anos de experiencia.
+              Eu sou um Desenvolvedor Fullstack com 2 anos de experiencia.
             </h3>
             <button className="btn btn-sm ">Veja meu trabalho</button>
           </motion.div>

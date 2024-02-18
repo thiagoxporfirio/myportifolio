@@ -34,7 +34,7 @@ const About = () => {
           >
             <h2 className="h2 text-accent">Sobre mim.</h2>
             <h3 className="h3 mb-4">
-              Eu sou um Desenvolvedor Front-End com 2 anos de experiencia.
+              Eu sou um Desenvolvedor Fullstack com 2 anos de experiencia.
             </h3>
             <p className="mb-6 ">
               Com minha experiência prévia como programador, adquiri habilidades

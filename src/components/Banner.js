@@ -39,7 +39,7 @@ const Banner = () => {
                 sequence={[
                   "Desenvolvedor Front-end",
                   2000,
-                  "UI/UX Designer",
+                  "Desenvolvedor Back-end",
                   2000,
                   "Streamer",
                   2000,
@@ -57,10 +57,7 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
-              Programador autodidata, futuro Engenheiro de Software. <br></br>
-              Venho desenvolvendo projetos como Desenvolvedor Front-end e estou
-              me especializando nesta área, com foco em tecnologias como
-              JavaScript, ReactJS, NextJs, TypeScript e NodeJS nas horas vagas.
+              Engenheiro de Software com duas graduações e uma profunda paixão pela programação, dedico-me intensamente aos estudos no campo da tecnologia. Com um foco em desenvolvimento Fullstack, tenho aprimorado minhas habilidades em tecnologias chave, incluindo React, TypeScript e NodeJS. Através de uma abordagem autodidata, habilitando-me a criar soluções eficazes e de alto impacto no universo do desenvolvimento de software.
             </motion.p>
             <motion.div
             variants={fadeIn("up", 0.3)}
