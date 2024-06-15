@@ -23,7 +23,7 @@ const Work = () => {
                                 mais recentes.
                             </h2>
                             <p className='max-w-sm mb-16 '>
-                                Nesta aba vc vera todos os meus trabalhos feitos como Desenvolvedor e Ui/Ux Designer.
+                                Nesta aba você vera todos os meus trabalhos feitos como Desenvolvedor e Ui/Ux Designer.
                             </p>
                             <button className='btn btn-sm'><a href='https://github.com/thiagoxporfirio' id=''> Ver todos os projetos</a></button>
                         </div>

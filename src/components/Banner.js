@@ -4,7 +4,6 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
-import ImaegeMe from "../assets/me.jpeg";
 
 const Banner = () => {
 	return (
@@ -57,8 +56,7 @@ const Banner = () => {
 							viewport={{ once: false, amount: 0.7 }}
 						>
 							Engenheiro de Software com duas graduações e uma profunda paixão
-							pela programação, dedico-me intensamente aos estudos no campo da
-							tecnologia. Com um foco em desenvolvimento Fullstack, tenho
+							pelo que faço. Com um foco em desenvolvimento Fullstack, tenho
 							aprimorado minhas habilidades em tecnologias chave, incluindo
 							React, TypeScript e NodeJS. Através de uma abordagem autodidata,
 							habilitando-me a criar soluções eficazes e de alto impacto no
