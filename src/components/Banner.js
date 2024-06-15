@@ -110,24 +110,12 @@ const Banner = () => {
 						variants={fadeIn("down", 0.5)}
 						initial="hidden"
 						whileInView={"show"}
-<<<<<<< HEAD
-           className="hidden lg:flex felx-1 max-w-[320px] lg:max-w-[482px] ">
-=======
 						className="hidden lg:flex felx-1 max-w-[320px] lg:max-w-[482px] "
 					>
->>>>>>> f019ce5269bcb0ca32876f478f3feca580fca9ca
 						<img className="" alt="" />
 					</motion.div>
 				</div>
 			</div>
-<<<<<<< HEAD
-=======
-			<img
-				className="w-full object-cover object-center w-48 h-48 rounded-full mx-auto mt-4"
-				src={ImaegeMe}
-				alt="profile"
-			/>
->>>>>>> f019ce5269bcb0ca32876f478f3feca580fca9ca
 		</section>
 	);
 };
