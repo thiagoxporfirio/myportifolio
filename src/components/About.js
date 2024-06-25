@@ -22,7 +22,7 @@ const About = () => {
 						whileInView={"show"}
 						viewport={{ once: false, amount: 0.3 }}
 						className="flex-1 bg-about bg-contain bg-no-repeat h-[640px]
-          mix-blend-lighten bg-top"
+          				mix-blend-lighten bg-top"
 					></motion.div>
 					{/* txt */}
 					<motion.div
@@ -67,7 +67,7 @@ const About = () => {
 							</div>
 							<div>
 								<div className="text-[40px] font-tertiary text-gradient mb-2">
-									{inView ? <CountUp start={0} end={5} duration={6} /> : null}
+									{inView ? <CountUp start={0} end={8} duration={6} /> : null}
 								</div>
 								<div className="font-primary text-sm tracking-[2px] ">
 									Projetos <br />

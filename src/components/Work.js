@@ -27,7 +27,7 @@ const Work = () => {
 							</h2>
 							<p className="max-w-sm mb-16 ">
 								Nesta aba você vera todos os meus trabalhos feitos como
-								Desenvolvedor e Ui/Ux Designer.
+								Desenvolvedor.
 							</p>
 							<button className="btn btn-sm">
 								<a href="https://github.com/thiagoxporfirio" id="">
@@ -48,7 +48,7 @@ const Work = () => {
 							/>
 							{/*Pretitulo */}
 							<div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 ">
-								<span className="text-gradient">UI/UX Designer</span>
+								<span className="text-gradient">Front-End</span>
 							</div>
 							{/*Titulo */}
 							<div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
@@ -96,7 +96,7 @@ const Work = () => {
 							/>
 							{/*Pretitulo */}
 							<div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 ">
-								<span className="text-gradient">Desenvolvedor Front-end</span>
+								<span className="text-gradient">Desenvolvedor Fullstack</span>
 							</div>
 							{/*Titulo */}
 							<div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
@@ -115,7 +115,7 @@ const Work = () => {
 							/>
 							{/*Pretitulo */}
 							<div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 ">
-								<span className="text-gradient">Desenvolvedor Front-End</span>
+								<span className="text-gradient">Desenvolvedor Fullstack</span>
 							</div>
 							{/*Titulo */}
 							<div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">

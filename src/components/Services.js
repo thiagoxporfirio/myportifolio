@@ -7,19 +7,13 @@ const services = [
 	{
 		name: "Desenvolvedor Front-End",
 		description:
-			"Com minha habilidade como Desenvolvedor, busco ajudar pessoas a resolver problemas na Web e impactar suas vidas de forma direta e indireta.",
+			"Criação de interfaces de usuário atraentes e responsivas, com foco na experiência do usuário e na otimização de desempenho. Usando tecnologias como React, React-Native, Next.js, TailwindCSS.",
 		link: "Saiba mais"
 	},
 	{
 		name: "Desenvolvedor Back-End",
 		description:
-			"Depois de cursos e preparamentos com muita pratica em Dev back-end, estou pronto para ajudar a criar soluções eficazes e de alto impacto no universo do desenvolvimento de software.",
-		link: "Saiba mais"
-	},
-	{
-		name: "Streamer",
-		description:
-			"Jogando a noite transmitindo jogos em que eu curto e jogo no tempo livre.",
+			"Desenvolvimento de servidores e APIs robustos e escaláveis, com foco na segurança e na eficiência. Usando tecnologias como Node.js, Express, MongoDB, PostgreSQL, Docker.",
 		link: "Saiba mais"
 	}
 ];
@@ -39,7 +33,7 @@ const Services = () => {
 					>
 						<h2 className="h2 text-accent mb-6">Oque eu faço?</h2>
 						<h3 className="h3 max-w-[455pc] mb-16">
-							Eu sou um Desenvolvedor Fullstack com 2 anos de experiencia.
+							Eu sou um Desenvolvedor Fullstack com 3 anos de experiencia.
 						</h3>
 						<button className="btn btn-sm ">Veja meu trabalho</button>
 					</motion.div>
