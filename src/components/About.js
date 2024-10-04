@@ -34,21 +34,24 @@ const About = () => {
 					>
 						<h2 className="h2 text-accent">Sobre mim.</h2>
 						<h3 className="h3 mb-4">
-							Eu sou um Desenvolvedor Fullstack com 3 anos de experiencia.
-						</h3>
+							{" "}
+							Um Entusiasta Curioso e Apaixonado pela Vida{" "}
+						</h3>{" "}
 						<p className="mb-6 ">
-							Com minha experiência prévia como Dev, adquiri habilidades de
-							desenvolvimento de aplicativos web e Mobile usando JavaScript. Sou
-							uma pessoa extrovertida que aprecia viajar e capturar momentos de
-							paisagens magníficas através de fotografias. Tenho um autêntico
-							gosto por me envolver em projetos e executá-los com excelência,
-							garantindo que cada trabalho seja feito de forma impecável.
+							{" "}
+							Sou apaixonado por explorar o mundo e estou sempre em busca de
+							novas experiências. Adoro viajar, conhecer culturas diferentes e
+							experimentar comidas típicas dos lugares que visito. Além disso,
+							sou um grande admirador de carros esportivos, apreciando a beleza
+							e a potência dessas máquinas. Tenho um carinho especial pelos
+							animais e me conecto profundamente com a natureza. Essa combinação
+							de interesses reflete minha personalidade curiosa, expansiva e
+							cheia de energia.{" "}
 						</p>
-
 						<div className="flex gap-x-6 lg:gap-x-10 mb-12 ">
 							<div>
 								<div className="text-[40px] font-tertiary text-gradient mb-2">
-									{inView ? <CountUp start={0} end={3} duration={6} /> : null}
+									{inView ? <CountUp start={0} end={4} duration={6} /> : null}
 								</div>
 								<div className="font-primary text-sm tracking-[2px] ">
 									Anos de <br />
@@ -67,7 +70,7 @@ const About = () => {
 							</div>
 							<div>
 								<div className="text-[40px] font-tertiary text-gradient mb-2">
-									{inView ? <CountUp start={0} end={8} duration={6} /> : null}
+									{inView ? <CountUp start={0} end={12} duration={6} /> : null}
 								</div>
 								<div className="font-primary text-sm tracking-[2px] ">
 									Projetos <br />
@@ -75,7 +78,6 @@ const About = () => {
 								</div>
 							</div>
 						</div>
-
 						<div className="flex gap-x-8 items-center mt-9">
 							<button className="btn btn-lg">
 								<Link to="contact" activeClass="active ">

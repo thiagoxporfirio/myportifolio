@@ -33,7 +33,7 @@ const Services = () => {
 					>
 						<h2 className="h2 text-accent mb-6">Oque eu faço?</h2>
 						<h3 className="h3 max-w-[455pc] mb-16">
-							Eu sou um Desenvolvedor Fullstack com 3 anos de experiencia.
+							Desenvolvedor Fullstack com 3 anos de experiencia.
 						</h3>
 						<button className="btn btn-sm ">Veja meu trabalho</button>
 					</motion.div>
