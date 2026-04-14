@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── NEON BUTTON ─────────────────────────────────────────── */
 .btn {
 	background: linear-gradient(
 		92.23deg,
@@ -10,7 +11,8 @@
 		#3bace2 100%,
 		#406aff 117.04%
 	);
-	box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+	box-shadow: 0 0 18px rgba(184, 9, 195, 0.55), 0 0 40px rgba(64, 106, 255, 0.25);
+	transition: box-shadow 0.3s ease, background 0.4s ease, transform 0.2s ease;
 }
 
 .btn:hover {
@@ -21,8 +23,15 @@
 		#b936ee 100%,
 		#ff56f6 117.04%
 	);
+	box-shadow: 0 0 28px rgba(255, 86, 246, 0.75), 0 0 60px rgba(59, 172, 226, 0.35);
+	transform: translateY(-2px);
 }
 
+.btn:active {
+	transform: translateY(0px);
+}
+
+/* ─── GRADIENT / ACTIVE ───────────────────────────────────── */
 .gradient,
 .active {
 	background: linear-gradient(
@@ -38,14 +47,113 @@
 	color: #fff;
 	padding: 1rem;
 	border-radius: 100%;
+	box-shadow: 0 0 16px rgba(184, 9, 195, 0.7);
 }
 
+/* ─── CYBER CARD ──────────────────────────────────────────── */
+.cyber-card {
+	background: rgba(10, 10, 20, 0.55);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(184, 9, 195, 0.3);
+	border-radius: 12px;
+	box-shadow:
+		0 0 0 1px rgba(59, 172, 226, 0.12),
+		0 8px 32px rgba(0, 0, 0, 0.45),
+		inset 0 1px 0 rgba(255, 255, 255, 0.04);
+	transition: border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.cyber-card:hover {
+	border-color: rgba(184, 9, 195, 0.7);
+	box-shadow:
+		0 0 24px rgba(184, 9, 195, 0.35),
+		0 0 60px rgba(59, 172, 226, 0.15),
+		0 8px 32px rgba(0, 0, 0, 0.55);
+}
+
+/* ─── NEON BORDER (thin accent line) ─────────────────────── */
+.neon-border {
+	border: 1px solid rgba(184, 9, 195, 0.5);
+	box-shadow: 0 0 12px rgba(184, 9, 195, 0.3), inset 0 0 10px rgba(184, 9, 195, 0.05);
+}
+
+.neon-border:focus,
+.neon-border:focus-within {
+	border-color: #b809c3;
+	box-shadow: 0 0 20px rgba(184, 9, 195, 0.55);
+	outline: none;
+}
+
+/* ─── SCANLINE OVERLAY (optional: apply to body or .site-bg) */
+.scanlines::after {
+	content: "";
+	position: fixed;
+	inset: 0;
+	background: repeating-linear-gradient(
+		0deg,
+		transparent,
+		transparent 2px,
+		rgba(0, 0, 0, 0.03) 2px,
+		rgba(0, 0, 0, 0.03) 4px
+	);
+	pointer-events: none;
+	z-index: 9999;
+}
+
+/* ─── GLITCH TEXT ANIMATION ───────────────────────────────── */
+@keyframes glitch {
+	0% { text-shadow: 2px 0 #ff56f6, -2px 0 #3bace2; }
+	20% { text-shadow: -2px 0 #ff56f6, 2px 0 #3bace2; }
+	40% { text-shadow: 2px 2px #ff56f6, -2px -2px #3bace2; }
+	60% { text-shadow: -2px 2px #ff56f6, 2px -2px #3bace2; }
+	80% { text-shadow: 2px -2px #ff56f6, -2px 2px #3bace2; }
+	100% { text-shadow: 2px 0 #ff56f6, -2px 0 #3bace2; }
+}
+
+.glitch-text:hover {
+	animation: glitch 0.4s steps(1) infinite;
+}
+
+/* ─── NEON GLOW TEXT ──────────────────────────────────────── */
+.neon-text {
+	text-shadow:
+		0 0 6px rgba(184, 9, 195, 0.9),
+		0 0 20px rgba(184, 9, 195, 0.6),
+		0 0 40px rgba(184, 9, 195, 0.3);
+}
+
+/* ─── SECTION DIVIDER ─────────────────────────────────────── */
+.section-divider {
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		rgba(184, 9, 195, 0.5) 20%,
+		rgba(59, 172, 226, 0.5) 50%,
+		rgba(184, 9, 195, 0.5) 80%,
+		transparent
+	);
+	margin: 0 auto;
+}
+
+/* ─── GLASS NAV ───────────────────────────────────────────── */
+.glass-nav {
+	background: rgba(10, 10, 20, 0.6);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: 1px solid rgba(184, 9, 195, 0.25);
+	box-shadow: 0 0 30px rgba(184, 9, 195, 0.2), 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── BASE LAYER ──────────────────────────────────────────── */
 @layer base {
 	body {
 		@apply font-secondary text-lg leading-8 text-white;
+		background-color: #070710;
 	}
 	.h2 {
-		@apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+		@apply font-primary text-[32px] mb-6 tracking-widest uppercase;
 	}
 	.h3 {
 		@apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
@@ -64,6 +172,7 @@
 	}
 	.text-gradient {
 		@apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+		transition: background-position 0.4s ease;
 	}
 	.section {
 		@apply py-8 lg:py-24 lg:h-screen flex items-center;
